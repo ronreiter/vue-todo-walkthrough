@@ -26,3 +26,19 @@ pre {
     cursor: pointer;
 
 }
+
+@media only screen and (max-width: 576px) {
+    .annotation {
+        position: absolute;
+
+    }
+
+    .tooltip-code {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto !important;
+        z-index: 1;
+    }
+}

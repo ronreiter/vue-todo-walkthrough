@@ -11,10 +11,12 @@
 </head>
 <body>
 <div class="container">
-    <h1 class="my-5">Vue.js Todo App Code Walkthrough</h1>
+    <h1 class="my-5">Vue.js Todo App Annotated Code Walkthrough</h1>
 
     <p>This is a basic Vue.js example which explains how a basic Vue 3 application is built, interactively
-        This example uses Vue 3 and Bootstrap.js, and uses HTML5 Local Storage to store the todos locally.
+        This example uses <a href="https://v3.vuejs.org/">Vue 3</a>
+        and <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap 5</a>,
+        and uses HTML5 Local Storage to store the todos locally.
         It has less than 100 lines, but uses most of the main features of Vue.js.</p>
     <p>Here is the Todo App in action:</p>
     <div class="card bg-light row p-5 my-5">
@@ -28,8 +30,8 @@
         it sits within the main HTML page.</p>
     <p>Hover on the different sections of the source code to get an explanation for what each part does.</p>
 
-    <div class="row">
-        <div class="col-8">
+    <div class="row" style="position: relative">
+        <div class="col-sm-8 col-xs-6">
             <h3 class="my-3">HTML (<a href="todo.html">todo.html</a>)</h3>
             <pre class="card"><code id="code-html" class="language-markup line-numbers">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -74,18 +76,19 @@
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
         </div>
-        <div class="col-4">
+        <div class="col-sm-4 col-xs-6 annotation">
             <div class="card tooltip-code" id="tooltip-code-html">
                 <div class="card-body">
                     <h4 class="card-title mb-3"></h4>
                     <p class="card-text"></p>
-                    <a target="_blank" class="btn btn-primary btn-block">Read more...</a>
+                    <a target="_blank" class="btn btn-primary">Read more...</a>
+                    <a onclick="popout()" class="btn btn-secondary">Close</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-8">
+        <div class="col-sm-8 col-xs-6">
 
             <h3 class="my-3">JavaScript (<a href="todo.js">todo.js</a>)</h3>
 
@@ -124,17 +127,19 @@
 const app = Vue.createApp(TodoApp);
 const vm = app.mount('#app');</code></pre>
         </div>
-        <div class="col-4">
+        <div class="col-sm-4 col-xs-6 annotation">
             <div class="card tooltip-code" id="tooltip-code-js">
                 <div class="card-body">
                     <h4 class="card-title mb-3"></h4>
                     <p class="card-text"></p>
-                    <a target="_blank" class="btn btn-primary btn-block">Read more...</a>
+                    <a target="_blank" class="btn btn-primary">Read more...</a>
+                    <a onclick="popout()" class="btn btn-secondary">Close</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <footer class="bg-dark text-light p-5 mt-5">
     <div class="container">
         <div class="row">

@@ -269,8 +269,6 @@ const tooltips = {
     }
 }
 
-window.onload = function() {
-
     function popup(e, type, index) {
         popout();
         const tooltip = document.getElementById("tooltip-" + type);
@@ -282,7 +280,7 @@ window.onload = function() {
         tooltip.querySelector(".card-title").innerHTML = data.title;
         tooltip.querySelector(".card-text").innerHTML = data.text;
         tooltip.querySelector("a").href = data.link;
-        tooltip.querySelector("a").style.display = data.link ? "block" : "none"
+        tooltip.querySelector("a").style.display = data.link ? "inline-block" : "none"
 
         tooltip.classList.add("visible");
         tooltip.style.top = (e.target.offsetTop + 50) + "px";
@@ -306,6 +304,7 @@ window.onload = function() {
 
 
     }
+window.onload = function() {
 
     // fix the highlighter to create spans out of all text elements
     document.querySelectorAll("code").forEach(code => code.childNodes.forEach((x, index) => {
@@ -323,9 +322,14 @@ window.onload = function() {
 
         const tooltipData = tooltips[code.id][index];
         if (tooltipData) {
-            x.addEventListener("mouseover", (e) => popup(e, code.id, index));
-            x.addEventListener("click", (e) => click(e, code.id, index));
-            x.addEventListener("mouseout", (e) => popout());
+            if ('ontouchstart' in window) {
+                console.log("mobile");
+                x.addEventListener("click", (e) => popup(e, code.id, index));
+            } else {
+                x.addEventListener("mouseover", (e) => popup(e, code.id, index));
+                x.addEventListener("click", (e) => click(e, code.id, index));
+                x.addEventListener("mouseout", (e) => popout());
+            }
             x.classList.add("tooltip-enabled");
 
         }
