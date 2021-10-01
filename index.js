@@ -216,8 +216,9 @@ const tooltips = {
         },
         119: {
             title: "Removing the todo string from todos",
-            text: `This is a native JavaScript function which removes a portion of an array from a given index. The
-            second argument specifies how many items we want to remove, which in our case is just 1.<br/><br/>
+            text: `This is a native JavaScript function which removes a portion of an array from a given index. 
+            The first argument specifies the index in which to start removing from, and the second argument specifies 
+            how many items we want to remove, which in our case is just 1, because we only want to remove one todo.<br/><br/>
             As mentioned above, any change to the <code>todos</code> array triggers both a re-render of the todo list
             due to the <code>v-for</code> directive, and the <code>todos</code> watch function.`,
             link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice",
