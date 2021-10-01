@@ -216,7 +216,8 @@ const tooltips = {
         },
         119: {
             title: "Removing the todo string from todos",
-            text: `This is a native JavaScript function which removes a portion of an array from a given index. 
+            text: `The function <code>splice</code> is a native JavaScript string method, which removes a portion 
+            of an array from a given index.<br/><br/> 
             The first argument specifies the index in which to start removing from, and the second argument specifies 
             how many items we want to remove, which in our case is just 1, because we only want to remove one todo.<br/><br/>
             As mentioned above, any change to the <code>todos</code> array triggers both a re-render of the todo list
