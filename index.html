@@ -4,33 +4,34 @@
     <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.2.0/styles/atom-one-dark.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vue.js Todo App Code Walkthrough</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="prism.css"/>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1 class="my-5">Vue.js Todo App Code Walkthrough</h1>
+<div class="container">
+    <h1 class="my-5">Vue.js Todo App Code Walkthrough</h1>
 
-        <p>This is a basic Vue.js example which explains how a basic Vue 3 application is built, interactively
-            This example uses Vue 3 and Bootstrap.js, and uses HTML5 Local Storage to store the todos locally.
-            It has less than 100 lines, but uses most of the main features of Vue.js.</p>
-        <p>Here is the Todo App in action:</p>
-        <div class="card bg-light row p-5 my-5">
-            <iframe src="todo.html" class="card col-lg-8 offset-lg-2 col-md-12 offset-md-0" style="height: 400px"></iframe>
-        </div>
-        <h3>Source Code</h3>
-        <p>The Todo App is made out of two files, the main HTML page, and the Vue component's code in JavaScript.
+    <p>This is a basic Vue.js example which explains how a basic Vue 3 application is built, interactively
+        This example uses Vue 3 and Bootstrap.js, and uses HTML5 Local Storage to store the todos locally.
+        It has less than 100 lines, but uses most of the main features of Vue.js.</p>
+    <p>Here is the Todo App in action:</p>
+    <div class="card bg-light row p-5 my-5">
+        <iframe src="todo.html" class="card col-lg-8 offset-lg-2 col-md-12 offset-md-0" style="height: 400px"></iframe>
+    </div>
+    <h3>Source Code</h3>
+    <p>The Todo App is made out of two files, the main HTML page, and the Vue component's code in JavaScript.
         The HTML file loads the JavaScript, and contains the HTML template which the Todo App component will use.</p>
-        <p>When writing Vue <a href="https://v3.vuejs.org/guide/single-file-component.html">Single File Components</a>,
-            the component template is inside the same file as its code, but in this simplified example,
-            it sits within the main HTML page.</p>
-        <p>Hover on the different sections of the source code to get an explanation for what each part does.</p>
+    <p>When writing Vue <a href="https://v3.vuejs.org/guide/single-file-component.html">Single File Components</a>,
+        the component template is inside the same file as its code, but in this simplified example,
+        it sits within the main HTML page.</p>
+    <p>Hover on the different sections of the source code to get an explanation for what each part does.</p>
 
-        <div class="row">
-            <div class="col-8">
-                <h3 class="my-3">HTML (<a href="todo.html">todo.html</a>)</h3>
-                <pre class="card"><code id="code-html"  class="language-markup line-numbers">&lt;!DOCTYPE html&gt;
+    <div class="row">
+        <div class="col-8">
+            <h3 class="my-3">HTML (<a href="todo.html">todo.html</a>)</h3>
+            <pre class="card"><code id="code-html" class="language-markup line-numbers">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;meta charset="utf-8"&gt;
@@ -72,23 +73,23 @@
     &lt;script src="todo.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-            </div>
-            <div class="col-4">
-                <div class="card tooltip-code" id="tooltip-code-html">
-                    <div class="card-body">
-                        <h4 class="card-title mb-3"></h4>
-                        <p class="card-text"></p>
-                        <a target="_blank" class="btn btn-primary btn-block">Read more...</a>
-                    </div>
+        </div>
+        <div class="col-4">
+            <div class="card tooltip-code" id="tooltip-code-html">
+                <div class="card-body">
+                    <h4 class="card-title mb-3"></h4>
+                    <p class="card-text"></p>
+                    <a target="_blank" class="btn btn-primary btn-block">Read more...</a>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-8">
+    </div>
+    <div class="row">
+        <div class="col-8">
 
-                <h3 class="my-3">JavaScript (<a href="todo.js">todo.js</a>)</h3>
+            <h3 class="my-3">JavaScript (<a href="todo.js">todo.js</a>)</h3>
 
-                <pre class="card"><code id="code-js" class="language-js line-numbers">const TodoApp = {
+            <pre class="card"><code id="code-js" class="language-js line-numbers">const TodoApp = {
   data() {
     return {
       todos: [],
@@ -122,24 +123,37 @@
 
 const app = Vue.createApp(TodoApp);
 const vm = app.mount('#app');</code></pre>
-            </div>
-            <div class="col-4">
-                <div class="card tooltip-code" id="tooltip-code-js">
-                    <div class="card-body">
-                        <h4 class="card-title mb-3"></h4>
-                        <p class="card-text"></p>
-                        <a target="_blank" class="btn btn-primary btn-block">Read more...</a>
-                    </div>
+        </div>
+        <div class="col-4">
+            <div class="card tooltip-code" id="tooltip-code-js">
+                <div class="card-body">
+                    <h4 class="card-title mb-3"></h4>
+                    <p class="card-text"></p>
+                    <a target="_blank" class="btn btn-primary btn-block">Read more...</a>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="bg-dark text-light p-5">
-        <div class="container">Created by <a href="https://github.com/ronreiter">Ron Reiter</a>.</div>
-    </footer>
+</div>
+<footer class="bg-dark text-light p-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/ronreiter/vue-todo-walkthrough"
+                   data-icon="octicon-star" data-size="large" data-show-count="true"
+                   aria-label="Star ronreiter/vue-todo-walkthrough on GitHub">Star</a>
+                <p>Created by <a href="https://github.com/ronreiter">Ron Reiter</a>.</p>
+            </div>
+        </div>
+    </div>
 
-    <script src="prism.js"></script>
-    <script src="index.js"></script>
+</footer>
+
+<script src="prism.js"></script>
+<script src="index.js"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 </body>
 </html>

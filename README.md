@@ -2,6 +2,6 @@
 
 This is an annotated example of a Vue.js 3 todo list application. Hover on top of each piece of code to learn about it.
 
-Click here to learn more:
+Click here to access it:
 
 https://ronreiter.github.io/vue-todo-walkthrough/
