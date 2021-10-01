@@ -122,7 +122,8 @@ const tooltips = {
         57: {
             title: "Vue.js template syntax",
             text: `Vue.js renders anything within the double brackets (in this example it is <code>todo</code>) as a JavaScript expression
-            automatically, and will update within the HTML whenever the expression is updated.`
+            automatically, and will update within the HTML whenever the expression is updated.`,
+            link: "https://v3.vuejs.org/guide/template-syntax.html",
         },
         60: {
             title: "Deleting a task",
